@@ -22,4 +22,4 @@ class CustomUserSerializer(serializers.ModelSerializer):
         if password is not None:
             instance.set_password(password)
         instance.save()
-        return 
+        return instance
